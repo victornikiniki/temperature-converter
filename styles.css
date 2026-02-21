@@ -16,6 +16,7 @@ h1{
     text-align: center;
     border-radius: 10px;
     box-shadow: 5px 5px 15px hsla(0, 14%, 49%, 0.589); 
+    max-width: 350px;
 }
 
 #textBox { 

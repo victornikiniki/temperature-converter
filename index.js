@@ -7,10 +7,15 @@ let temp;
 
 function tempConvert(){
     if(toFahrenheit.checked){ 
-        result.textContent = "You selected to Fahrenheit"
+        temp = Number(textBox.value); 
+        f = (temp * (9/5) + 32);
+        result.textContent = `${f} deg fahrenheit`;
+        
     }
     else if(toCelsius.checked){ 
-        result.textContent = "You selected to Celsius"
+        temp = Number(textBox.value); 
+        c = (temp - 32) * (5/9);
+        result.textContent = `${c} deg celsius`
     }
     else{ 
         result.textContent = "Select a unit"; 
