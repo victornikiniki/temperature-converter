@@ -9,13 +9,13 @@ function tempConvert(){
     if(toFahrenheit.checked){ 
         temp = Number(textBox.value); 
         f = (temp * (9/5) + 32);
-        result.textContent = `${f} deg fahrenheit`;
+        result.textContent = `${f.toFixed(1)} deg fahrenheit`;
         
     }
     else if(toCelsius.checked){ 
         temp = Number(textBox.value); 
         c = (temp - 32) * (5/9);
-        result.textContent = `${c} deg celsius`
+        result.textContent = `${c.toFixed(1)} deg celsius`
     }
     else{ 
         result.textContent = "Select a unit"; 
